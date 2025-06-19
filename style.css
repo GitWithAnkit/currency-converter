@@ -1,0 +1,145 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+:root {
+    --primary-color: #af4d98;
+    --bg-color: #f4e4ba;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 400px;
+    min-height: 45vh;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+form input {
+    border: 1px solid lightgray;
+    height: 3rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    cursor: text;
+}
+
+form input:hover {
+  background-color: #fdf4fa;
+}
+
+form input:focus {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 4px var(--primary-color);
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.dropdown i {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    transition: border 0.3s ease;
+}
+
+/* ✅ Hover effect for border */
+.select-container:hover {
+    border: 1px solid var(--primary-color);
+}
+
+.select-container img {
+    max-width: 2rem;
+    padding-left: 0.25rem;
+}
+
+.select-container select {
+    font-size: 1rem;
+    padding: 0.3rem;
+    background-color: #fff;
+}
+
+.select-container select:hover {
+    background-color: #f9f9f9;
+}
+
+.msg {
+    margin-top: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.btn {
+    margin-top: 2rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #933b7b;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.2rem;
+    }
+
+    form input,
+    .btn {
+        font-size: 0.9rem;
+    }
+}
