@@ -9,7 +9,7 @@ let msg = document.querySelector(".msg");
 for(let select of dropdown){
     for(currCode in countryList){
         let newOption = document.createElement("option")
-        newOption.innerText = currCode;
+        newOption.innerText = `${currCode} - ${currencyNames[currCode]}`;
         newOption.value = currCode;
         select.append(newOption);
         if(select.name === "from" && currCode === "USD"){
