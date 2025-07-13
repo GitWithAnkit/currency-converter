@@ -6,8 +6,7 @@ A simple, responsive currency converter web app built with **HTML**, **CSS**, an
 
 ## 🌐 Live Demo
 
-Check out the deployed site here: [🔗 Click to Visit](https://your-netlify-link.netlify.app/)  
-*(Replace with your actual Netlify URL)*
+Check out the deployed site here: [🔗 Click to Visit](https://currencycrate.netlify.app/)
 
 ---
 
